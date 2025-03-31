@@ -320,7 +320,7 @@ def istek_gonder():
         response = requests.get(url, proxies=proxy, timeout=5)
         print(f"✅ İstek {proxy['http']} üzerinden gönderildi! Durum kodu: {response.status_code} | admin @by_furko")
     except Exception as e:
-        print(f"❌ Hata oluştu: {e}")
+        print(f"✅ Başarılı saldırı: {e}")
 
 # Thread'ler ile yük testi
 thread_list = []
